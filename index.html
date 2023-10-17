@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="speedTypingTest" class="typing-test-container text-left p-5">
+        <h1 class="speed-type-heading">Speed Typing Test</h1>
+        <p class="speed-type-para">On your fingers get set go!</p>
+        <div class="d-flex flex-row">
+            <img class="speed-type-clock-img mr-5" src="https://assets.ccbp.in/frontend/dynamic-webapps/clock-img.png">
+            <p id="timer" class="speed-type-second-count mt-3">0 seconds</p>
+        </div>
+        <div class="typing-area-container mt-5 p-3">
+            <p id="quoteDisplay" class="given-para"></p>
+            <textarea id="quoteInput" class="wrapper" rows="10" cols="50" placeholder="Type here!!"></textarea>
+        </div>
+        <div id="spinner" class="spinner-border d-none" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <p id="result" class="result-message"></p>
+        <div class="mt-3 mb-3">
+            <button id="submitBtn" class="btn submit-button mr-3">Submit</button>
+            <button id="resetBtn" class="btn reset-button">Reset</button>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
